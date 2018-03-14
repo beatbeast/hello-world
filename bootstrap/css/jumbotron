@@ -1,0 +1,9 @@
+div.jumbotron.kold{
+    color:#fff;
+    text-align:center;
+    background:url('plan.jpg');
+    background-size:cover;
+    background-position:center;
+    padding-top:100px;
+    padding-bottom:100px;
+}
