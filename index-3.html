@@ -33,7 +33,7 @@
                     <p class="lead"><!--This file uses PHPMailer to send the emails.-->We will get back to you once your message has been received and processed</p>
 
 
-                    <form id="contact-form" method="post" action="contact-3.php" role="form">
+                    <form action="contact-3.php" method="post" role="form">
 
                         <div class="messages"></div>
 
@@ -43,14 +43,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_name">Firstname <font color="red">*</font></label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_lastname">Lastname <font color="red">*</font></label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -65,8 +65,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_phone">Phone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                        <label for="form_phone">Phone <font color="red">*</font></label>
+                                        <input id="form_phone" type="tel" name="phonenumber" class="form-control" placeholder="Please enter your phone*" required="required" data-error="Valid Phone-Number is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -81,8 +81,20 @@
                                 </div>
                                 <div class="col-md-12">
                                     <!-- Trigger the modal with a button -->
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message" data-toggle="modal" data-target="#myModal">
-                                    <!-- Modal -->
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message" data-toggle="" data-target="" name="submit">
+                                   
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong><font color="red">*</font></strong> These fields are required. Contact form for <a href="laolu.html" target="_blank">Windmill Ventures Limited by @beatbeast</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                     <!-- Modal -->
+                                    
                                         <div class="modal fade" id="myModal" role="dialog">
                                             <div class="modal-dialog">
                                             
@@ -97,25 +109,12 @@
                                                         <P>Click <strong>Close</strong> button to go back to the home page</P>
                                                     </div>
                                                         <div class="modal-footer">
-                                                           <a href="laolu.html" target="_blank"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></a>
+                                                           <button type="button" class="btn btn-default" data-dismiss="modal" onclick="window.location.href='laolu.html'">Close</button>
                                                         </div>
                                                 </div>
-                                              
                                             </div>
                                           </div>
-                                          
                                         </div>
-    
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted"><strong><font color="red">*</font></strong> These fields are required. Contact form for <a href="laolu.html" target="_blank">Windmill Ventures Limited by @beatbeast</a>.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
 
                 </div><!-- /.8 -->
 
